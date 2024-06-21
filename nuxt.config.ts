@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
   app: {
+    baseURL: '/nuxtfolio/',
+    buildAssetsDir: 'assets',
     head: {
       script: [
         {
