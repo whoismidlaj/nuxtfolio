@@ -1,15 +1,15 @@
 <template>
     <div class="container mx-auto pt-32 pb-32 px-5 min-h-screen flex flex-col justify-center items-start">
-        <div class="w-full flex justify-start items-center rounded-xl mb-10">
+        <div class="w-full flex justify-start items-center mb-10">
             <h1 class="text-center">About</h1>
         </div>
         <p>
             I'm Midlaj, a web developer and front-end developer from India. With a keen eye for design and a passion for coding, I specialize in creating responsive, user-friendly websites with technologies such as HTML, CSS, Bootstrap, Tailwind CSS, Vue.js, and WordPress. 
         </p>
-        <hr class="h-[1px] w-full my-4 bg-slate-700 border-0 rounded md:my-12">
+        <hr class="h-[1px] w-full my-8 bg-slate-700 border-0 rounded md:my-12">
         <div class="skills w-full">
             <h2 class="mb-4">Skills i have</h2>
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="skill">
                     <img src="../assets/img/skill/html5.svg" alt="Nuxt.js">
                     HTML5
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <hr class="h-[1px] w-full my-4 bg-slate-700 border-0 rounded md:my-12">
+        <hr class="h-[1px] w-full my-8 bg-slate-700 border-0 rounded md:my-12">
         <h2 class="mt-4 mb-4">About this site</h2>
         <ul class="list-none flex flex-col gap-2">
             <li>Hosted on Github Pages</li>

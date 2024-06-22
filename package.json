@@ -7,8 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -19,8 +18,5 @@
     "tailwindcss": "^3.3.5",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
-  },
-  "dependencies": {
-    "gh-pages": "^6.1.1"
   }
 }

@@ -16,7 +16,7 @@
         </div>
         <div class="flex gap-4">
             <a href="mailto:midlaj@tuta.io" target="_blank" class="btn btn-primary mt-8">Email Me</a>
-            <a href="../assets/midlaj-resume.pdf" target="_blank" class="btn btn-primary mt-8">Resume</a>
+            <a href="../midlaj-resume.pdf" target="_blank" class="btn btn-primary mt-8">Resume</a>
         </div>
     </div>
 </template>
