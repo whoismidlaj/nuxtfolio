@@ -7,7 +7,7 @@
             <div class="menu flex space-x-5 text-slate-100">
                 <NuxtLink :class="{'btn-primary active': $route.path === '/'}" class="btn btn-primary" to="/">Home</NuxtLink>
                 <NuxtLink :class="{'btn-primary active': $route.path === '/about'}" class="btn btn-primary" to="/about">About</NuxtLink>
-                <NuxtLink :class="{'btn-primary active': $route.path === '/photodump'}" class="btn btn-primary" to="/photodump">Photos</NuxtLink>
+                <!-- <NuxtLink :class="{'btn-primary active': $route.path === '/photodump'}" class="btn btn-primary" to="/photodump">Photos</NuxtLink> -->
             </div>
             <DarkModeToggle />
         </div>
