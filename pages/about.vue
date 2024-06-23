@@ -8,7 +8,7 @@
         </p>
         <hr class="h-[1px] w-full my-8 bg-slate-700 border-0 rounded md:my-12">
         <div class="skills w-full">
-            <h2 class="mb-4">Skills i have</h2>
+            <h2 class="mb-4">Tools I Use</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="skill">
                     <img src="../assets/img/skill/html5.svg" alt="Nuxt.js">

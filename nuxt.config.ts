@@ -33,4 +33,7 @@ export default defineNuxtConfig({
     preference: 'dark',
     fallback: 'dark'
 },
+plugins: [
+  '~/plugins/dateFormatter.js'
+]
 })

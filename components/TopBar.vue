@@ -1,5 +1,5 @@
 <template>
-    <div class="container fixed top-0 left-0 mx-auto flex justify-between items-center p-5">
+    <div class="container fixed top-0 left-1/2 -translate-x-1/2 flex justify-between items-center p-5">
         <img class="w-10 h-10 bg-gray-100 border border-gray-100 rounded-full" src="~/assets/img/profile-pic.png" alt="profile-pic">
         <div class="top-0">
             <div @click="togglePop" class="btn btn-primary w-fit">WIP v1</div>
