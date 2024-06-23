@@ -3,6 +3,21 @@ const showMenuModal = ref(false)
 function toggleMenu() {
   showMenuModal.value = !showMenuModal.value
 }
+
+// Listen for the event emitted from Component2
+const closeMenuListener = ref(null);
+
+function closeMenu() {
+  showMenuModal.value = false;
+}
+
+onMounted(() => {
+  on('closeMenu', closeMenu);
+});
+
+onUnmounted(() => {
+  off('closeMenu', closeMenu);
+});
 </script>
 
 <template>
