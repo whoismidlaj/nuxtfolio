@@ -5,7 +5,14 @@
             <div @click="togglePop" class="btn btn-primary w-fit">WIP v1</div>
         </div>
         <div v-show="showPop" class="fixed top-20 md:top-8 left-1/2 -translate-x-1/2 p-5 w-[calc(100%-2.5rem)] h-fit max-w-[400px] border rounded-xl backdrop-blur border-gray-900/10 dark:border-gray-300/10 bg-gradient-to-tr from-gray-200/50 to-gray-300/50 dark:from-gray-800/50 dark:to-gray-900/50">
-            <h2>Site is under construction</h2>
+            <h2 class="text-md mb-4">Site is under construction</h2>
+            <p class="text-sm mb-2">This website is under construction and always will be.</p>
+            <h4 class="text-base mb-1">Recent Updates :-</h4>
+            <ul class="list-decimal list-inside">
+                <li class="text-xs">New things</li>
+                <li class="text-xs">New stuffs</li>
+                <li class="text-xs">etc...</li>
+            </ul>
         </div>
     </div>
 </template>
