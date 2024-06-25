@@ -7,6 +7,24 @@
             I'm Midlaj, a web developer and front-end developer from India. With a keen eye for design and a passion for coding, I specialize in creating responsive, user-friendly websites with technologies such as HTML, CSS, Bootstrap, Tailwind CSS, Vue.js, and WordPress. 
         </p>
         <hr class="h-[1px] w-full my-8 bg-slate-700 border-0 rounded md:my-12">
+        <h2 class="mb-8">Experience</h2>
+        <div class="flex flex-col gap-4 w-full">
+            <div class="flex justify-between items-end p-5 border rounded-xl bg-gray-300/30 dark:bg-gray-800/50 border-gray-900/10 dark:border-gray-300/10">
+                <div class="flex flex-col gap-2 justify-center items-start">
+                    <h3 class="text-xl">Rexav LLP</h3>
+                    <p class="text-sm">Software Engineer</p>
+                </div>
+                <p class="text-sm px-5 py-1 rounded-full border text-gray-900 dark:text-gray-200 bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10">2023 - Present</p>
+            </div>
+            <div class="flex justify-between items-end p-5 border rounded-xl bg-gray-300/30 dark:bg-gray-800/50 border-gray-900/10 dark:border-gray-300/10">
+                <div class="flex flex-col gap-2 justify-center items-start">
+                    <h3 class="text-xl">BlazonWeb</h3>
+                    <p class="text-sm">Web Developer</p>
+                </div>
+                <p class="text-sm px-5 py-1 rounded-full border text-gray-900 dark:text-gray-200 bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10">2022 - 2023</p>
+            </div>
+        </div>
+        <hr class="h-[1px] w-full my-8 bg-slate-700 border-0 rounded md:my-12">
         <div class="skills w-full">
             <h2 class="mb-4">Tools I Use</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
