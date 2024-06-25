@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto min-h-screen flex flex-col justify-center items-start px-5 pb-24">
+    <div class="container mx-auto min-h-screen flex flex-col justify-center items-start px-5 pt-24 pb-24">
         <img class="w-28 h-28 mb-8 bg-gray-100 border-2 border-gray-100 rounded-full" src="~/assets/img/profile-pic.png" alt="profile-pic">
         <h1 class="mb-8 text-5xl md:text-6xl">
         I'm midlaj
