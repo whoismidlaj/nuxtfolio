@@ -21,11 +21,18 @@
 </template>
 
 <script setup lang="ts">
+import { useRuntimeConfig } from '#imports'
+
 const photos = ref([])
 const selectedPhoto = ref([])
 const showPhotoModal = ref(false)
 
-const { data, pending, error } = await useFetch('https://dev-midlaj.pantheonsite.io/wp-json/wp/v2/photo?_embed')
+
+// Access runtime config
+const config = useRuntimeConfig()
+const apiUrl = `${config.public.wpApiBaseUrl}photo?_embed`
+
+const { data, pending, error } = await useFetch(apiUrl)
 
 if (data.value) {
   photos.value = data.value

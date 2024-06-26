@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  runtimeConfig: {
+    public: {
+      wpApiBaseUrl: process.env.WP_API_BASE_URL || 'https://default-url.com/wp-json/wp/v2/'
+    }
+  },
+  ssr: false,
   devtools: { enabled: true },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

@@ -5,7 +5,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
-            <div v-for="post in posts" :key="post.id" class="blog-item border rounded-xl overflow-clip border-gray-900/10 dark:border-gray-300/10">
+            <NuxtLink :to="`/blog/${post.slug}`" v-for="post in posts" :key="post.id" class="blog-item border rounded-xl overflow-clip border-gray-900/10 dark:border-gray-300/10">
                 <div class="mb-6 p-5">
                     <h3 class="text-3xl font-light mb-2">{{ post.title.rendered }}</h3>
                     <div class="" v-html="post.excerpt.rendered"></div>
@@ -14,15 +14,21 @@
                     <span>{{ post._embedded.author[0].name }}</span>
                     <span class="">{{ formatDate(post.date) }}</span>
                 </div>
-            </div>  
+            </NuxtLink>  
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import { useRuntimeConfig } from '#imports'
+
 const posts = ref([])
 
-const { data, pending, error } = await useFetch('https://dev-midlaj.pantheonsite.io/wp-json/wp/v2/posts?_embed')
+// Access runtime config
+const config = useRuntimeConfig()
+const apiUrl = `${config.public.wpApiBaseUrl}posts?_embed`
+
+const { data, pending, error } = await useFetch(apiUrl)
 
 if (data.value) {
   posts.value = data.value
