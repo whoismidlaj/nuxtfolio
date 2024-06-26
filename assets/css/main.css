@@ -40,7 +40,7 @@
     }
 
     .skill {
-      @apply bg-gray-400/30 dark:bg-gray-700/30 text-gray-900 dark:text-gray-300 p-4 rounded-lg flex justify-between items-center gap-4;
+      @apply bg-gray-300/30 dark:bg-gray-800 text-gray-900 dark:text-gray-300 p-4 rounded-lg flex justify-between items-center gap-4 border border-gray-900/10 dark:border-gray-300/10;
     }
 
     .skill img {

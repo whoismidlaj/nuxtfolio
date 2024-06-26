@@ -1,17 +1,19 @@
 <template>
-    <div class="container mx-auto pt-32 pb-32 px-5 min-h-screen flex flex-col items-start">
-        <div class="w-full flex justify-start items-center mb-10">
+    <div class="container mx-auto pt-32 pb-32 px-5 min-h-screen flex flex-col gap-12 items-start">
+        <div class="w-full flex justify-start items-center">
             <h1 class="text-center">Blog</h1>
         </div>
 
-        <div class="flex flex-col w-full border-t border-slate-700 pt-12">
-            <div v-for="post in posts" :key="post.id" class="blog-item py-5 border-b border-gray-900/10 dark:border-gray-300/10">
-                <h3 class="">{{ post.title.rendered }}</h3>
-                <div class="">
-                    <p>{{ post._embedded.author[0].name }}</p>
-                    <p>{{ formatDate(post.date) }}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+            <div v-for="post in posts" :key="post.id" class="blog-item border rounded-xl overflow-clip border-gray-900/10 dark:border-gray-300/10">
+                <div class="mb-6 p-5">
+                    <h3 class="text-3xl font-light mb-2">{{ post.title.rendered }}</h3>
+                    <div class="" v-html="post.excerpt.rendered"></div>
                 </div>
-                <div v-html="post.excerpt.rendered"></div>
+                <div class="flex gap-2 justify-between border-t bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10 py-2 px-5 rounded-b-xl">
+                    <span>{{ post._embedded.author[0].name }}</span>
+                    <span class="">{{ formatDate(post.date) }}</span>
+                </div>
             </div>  
         </div>
     </div>
