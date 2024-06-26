@@ -5,7 +5,16 @@ export default defineNuxtConfig({
       wpApiBaseUrl: process.env.WP_API_BASE_URL || 'https://default-url.com/wp-json/wp/v2/'
     }
   },
-  ssr: false,
+  ssr: true,
+  nitro: {
+    prerender: {
+      routes: async () => {
+        const response = await fetch('https://dev-midlaj.pantheonsite.io/wp-json/wp/v2/posts')
+        const posts = await response.json()
+        return posts.map((post: any) => `/blog/${post.slug}`)
+      }
+    },
+  },
   devtools: { enabled: true },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
