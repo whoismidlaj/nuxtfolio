@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useRoute, useAsyncData } from '#imports'
+import { useRuntimeConfig, useRoute } from '#imports'
 import { usePost } from '@/composables/usePost'
 
 const route = useRoute()
@@ -28,26 +28,14 @@ const post = ref(null)
 const error = ref<Error | null>(null)
 const pending = ref<boolean>(true)
 
-// Using useAsyncData to fetch the post during SSR and CSR
-const { data, pending: dataPending, error: dataError } = await useAsyncData(
-  `post-${slug}`,
-  () => usePost(slug)
-)
-
-post.value = data.value
-error.value = dataError.value
-pending.value = dataPending.value
-
 onMounted(async () => {
-  if (!post.value && !error.value) {
-    try {
-      const fetchedPost = await usePost(slug)
-      post.value = fetchedPost
-    } catch (err) {
-      error.value = err
-    } finally {
-      pending.value = false
-    }
+  try {
+    const fetchedPost = await usePost(slug)
+    post.value = fetchedPost
+  } catch (err) {
+    error.value = err
+  } finally {
+    pending.value = false
   }
 })
 </script>
