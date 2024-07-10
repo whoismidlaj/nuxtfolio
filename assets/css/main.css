@@ -28,11 +28,11 @@
     }
 
     .btn-primary {
-      @apply text-gray-900 dark:text-gray-200 bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10;
+      @apply text-gray-900 dark:text-gray-200 bg-gray-300/10 dark:bg-gray-800/10 border-gray-900/10 dark:border-gray-300/10;
     }
 
     .btn-primary.active, .btn-primary:hover {
-      @apply text-gray-900 dark:text-gray-300 bg-gray-300 dark:bg-gray-700 border-gray-900/10 dark:border-gray-300/10;
+      @apply text-gray-900 dark:text-gray-300 bg-gray-800/10 dark:bg-gray-100/10 border-gray-900/10 dark:border-gray-300/10;
     }
 
     .icon-btn {

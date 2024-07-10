@@ -26,7 +26,7 @@ onUnmounted(() => {
             <div class="menu hidden space-x-5 text-slate-100 md:flex items-center">
                 <NuxtLink :class="{'btn-primary active': $route.path === '/'}" class="btn btn-primary" to="/">Home</NuxtLink>
                 <NuxtLink :class="{'btn-primary active': $route.path === '/about'}" class="btn btn-primary" to="/about">About</NuxtLink>
-                <!-- <NuxtLink :class="{'btn-primary active': $route.path === '/blog'}" class="btn btn-primary" to="/blog">Blog</NuxtLink> -->
+                <NuxtLink :class="{'btn-primary active': $route.path === '/projects'}" class="btn btn-primary" to="/projects">Projects</NuxtLink>
                 <!-- <NuxtLink :class="{'btn-primary active': $route.path === '/photodump'}" class="btn btn-primary" to="/photodump">Photos</NuxtLink> -->
             </div>
             <div @click="toggleMenu" class="menuMobile flex justify-center items-center btn btn-primary p-2 md:hidden">
