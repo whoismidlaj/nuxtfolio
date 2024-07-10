@@ -12,7 +12,7 @@
   const simulateLoading = async () => {
     const increment = 2; // Adjust increment for smoother progress
     const interval = 20; // Adjust interval for desired speed (in milliseconds)
-    const minDisplayTime = 5000; // Minimum display time (in milliseconds)
+    const minDisplayTime = 500; // Minimum display time (in milliseconds)
   
     let intervalId = setInterval(() => {
       progress.value += increment;

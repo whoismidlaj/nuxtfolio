@@ -72,7 +72,7 @@
         <hr class="h-[1px] w-full my-8 bg-gray-400/50 dark:bg-gray-700 border-0 rounded md:my-12">
         <h2 class="mt-4 mb-4">About this site</h2>
         <ul class="list-none flex flex-col gap-2">
-            <li class="flex items-center">Hosted on <img src="../assets/img/cloudflarepages.svg" class="w-5 mx-2" />Cloudflare Pages</li>
+            <li class="flex items-center">Hosted on <img src="../assets/img/icons/cloudflarepages.svg" class="w-5 mx-2" />Cloudflare Pages</li>
             <li class="flex items-center">Powered by <img src="../assets/img/skill/nuxtdotjs.svg" class="w-5 mx-2" /> Nuxt.js and <img src="../assets/img/skill/tailwindcss.svg" class="w-5 mx-2" />TailwindCSS</li>
             <!-- <li>Inspired by <a href="https://daleanthony.com" class="border-b-2 border-slate-400 hover:text-slate-100 hover:border-slate-100">Dale Anthony's Website</a></li> -->
         </ul>
