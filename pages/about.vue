@@ -65,7 +65,7 @@
                     Figma
                 </div>
                 <div class="skill justify-end">
-                    Learning more
+                    More to learn
                 </div>
             </div>
         </div>
