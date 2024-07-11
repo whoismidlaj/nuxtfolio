@@ -39,6 +39,14 @@
       @apply h-10 w-10 p-2 rounded-full bg-gray-900 hover:bg-gray-800 dark:bg-gray-700/50 dark:hover:bg-gray-700 cursor-pointer;
     }
 
+    .icontext-btn {
+      @apply w-9 h-9 md:w-auto md:h-auto text-sm flex gap-2 justify-center items-center md:px-5 md:py-[6px] rounded-full font-normal border cursor-pointer text-gray-900 dark:text-gray-200 bg-gray-300/10 dark:bg-gray-800/10 border-gray-900/10 dark:border-gray-300/10
+    }
+
+    .icontext-btn:hover {
+      @apply text-gray-900 dark:text-gray-300 bg-gray-800/10 dark:bg-gray-100/10 border-gray-900/10 dark:border-gray-300/10;
+    }
+
     .skill {
       @apply bg-gray-300/30 dark:bg-gray-800 text-gray-900 dark:text-gray-300 p-4 rounded-lg flex justify-between items-center gap-4 border border-gray-900/10 dark:border-gray-300/10;
     }

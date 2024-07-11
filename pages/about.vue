@@ -41,11 +41,11 @@
                     JavaScript
                 </div>
                 <div class="skill">
-                    <img src="../assets/img/skill/vuedotjs.svg" alt="">
+                    <img src="../assets/img/skill/nuxtdotjs.svg" alt="">
                     Nuxt.js
                 </div>
                 <div class="skill">
-                    <img src="../assets/img/skill/nuxtdotjs.svg" alt="Nuxt.js">
+                    <img src="../assets/img/skill/vuedotjs.svg" alt="Nuxt.js">
                     Vue.js
                 </div>
                 <div class="skill">
