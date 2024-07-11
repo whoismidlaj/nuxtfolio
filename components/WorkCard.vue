@@ -8,7 +8,7 @@ import works from "~/content/data.json"
             <h3 class="text-xl">{{ work.name }}</h3>
             <p>{{ work.desc }}</p>
         </div>
-        <div class="px-5 py-3 flex justify-between bg-gray-300/80 dark:bg-gray-400/10">
+        <div class="px-5 py-3 flex justify-between border-t bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10">
             <div class="flex items-center gap-4">
                 <div v-for="tech in work.tech" :key="tech" class="technology-icon">
                     <img class="w-5 h-5" :src="techIcons[tech]" alt="" srcset="">
