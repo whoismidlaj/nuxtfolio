@@ -3,15 +3,15 @@ import works from "~/content/data.json"
 </script>
 
 <template>
-    <div class="flex flex-col justify-between border rounded-xl overflow-hidden bg-gray-300/30 dark:bg-gray-800/50 border-gray-900/10 dark:border-gray-300/10" v-for="work in works" :key="work.id">
+    <div class="WorkCard flex flex-col justify-between" v-for="work in works" :key="work.id">
         <div class="flex flex-col p-5 gap-2">
             <h3 class="text-xl">{{ work.name }}</h3>
             <p>{{ work.desc }}</p>
         </div>
-        <div class="px-5 py-3 flex justify-between border-t bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10">
+        <div class="px-5 py-3 flex justify-between WorkDetails">
             <div class="flex items-center gap-4">
                 <div v-for="tech in work.tech" :key="tech" class="technology-icon">
-                    <img class="w-5 h-5" :src="techIcons[tech]" alt="" srcset="">
+                    <component :is="techIcons[tech]" class="w-5 h-5" />
                 </div>
             </div>
             <div class="flex gap-2">

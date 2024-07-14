@@ -12,7 +12,8 @@ export default {
   theme: {
     fontFamily: {
       'sans': ['Inter', 'sans-serif'],
-      'general': ['General Sans', 'sans-serif']
+      'general': ['General Sans', 'sans-serif'],
+      'mono': ['Hack', 'monospace']
     },
     extend: {},
   },

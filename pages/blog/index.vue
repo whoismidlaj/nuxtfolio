@@ -5,12 +5,12 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
-            <NuxtLink :to="`/blog/${post.slug}`" v-for="post in posts" :key="post.id" class="blog-item border rounded-xl overflow-clip border-gray-900/10 dark:border-gray-300/10">
+            <NuxtLink :to="`/blog/${post.slug}`" v-for="post in posts" :key="post.id" class="blog-item">
                 <div class="mb-6 p-5">
                     <h3 class="text-3xl font-light mb-2">{{ post.title.rendered }}</h3>
                     <div class="" v-html="post.excerpt.rendered"></div>
                 </div>
-                <div class="flex gap-2 justify-between border-t bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10 py-2 px-5 rounded-b-xl">
+                <div class="flex gap-2 justify-between blog-details">
                     <span>{{ post._embedded.author[0].name }}</span>
                     <span class="">{{ formatDate(post.date) }}</span>
                 </div>

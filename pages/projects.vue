@@ -7,12 +7,12 @@
             <WorkCard />
             
             <!-- Placeholder -->
-            <div class="flex flex-col justify-between border rounded-xl overflow-hidden bg-gray-300/30 dark:bg-gray-800/50 border-gray-900/10 dark:border-gray-300/10">
+            <div class="WorkCard flex flex-col justify-between">
                 <div class="flex flex-col p-5 gap-2">
                     <h3 class="text-xl">Ready to enhance your digital presence?</h3>
                     <p>I specialize in creating responsive, user-friendly websites and web apps, available for hire.</p>
                 </div>
-                <div class="px-5 py-3 flex justify-end border-t bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10">
+                <div class="px-5 py-3 flex justify-end WorkDetails">
                     <!-- <div class="flex items-center gap-4">
                         <div class="technology-icon">
                             <img class="w-7 h-7 bg-gray-300 rounded-full" src="../assets/img/profile-pic.png" alt="" srcset="">
@@ -38,3 +38,7 @@
         </div>
     </div>
 </template>
+
+<script setup>
+
+</script>

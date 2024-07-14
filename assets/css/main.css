@@ -7,8 +7,199 @@
       @apply font-sans;
     }
 
+    html.matrix {
+      @apply font-mono;
+    }
+
+    .preloader {
+      @apply text-gray-900 bg-gradient-to-tr from-gray-200 to-gray-300
+    }
+
+    .dark .preloader {
+      @apply text-gray-300 from-gray-800 to-gray-900;
+    }
+
+    .matrix .preloader {
+      @apply text-[#00FF41] from-black to-black
+    }
+
+
+    /* Navigation */
+
+    .Navigation {
+      @apply fixed bottom-0 z-50 w-full py-3 md:py-5 border-t backdrop-blur border-gray-900/10 bg-gradient-to-tr from-gray-200/10 to-gray-300/10
+    }
+
+    .light .Navigation {
+
+    }
+
+    .dark .Navigation {
+      @apply border-gray-300/10 from-gray-800/10 to-gray-900/10
+    }
+
+    .matrix .Navigation {
+      @apply border-2 border-t-[#00FF41] from-black to-black;
+    }
+
+    .menuMobile svg {
+      @apply w-6 h-6 text-gray-900;
+    }
+
+    .dark .menuMobile svg {
+      @apply text-gray-200
+    }
+
+    .matrix .menuMobile svg {
+      @apply text-[#00FF41] hover:text-black
+    }
+
+    .menuContainer {
+      @apply bg-gray-300/10 dark:bg-gray-700/10 backdrop-blur border border-gray-900/10 dark:border-gray-300/10 rounded-xl 
+    }
+
+    .dark .menuContainer {
+      @apply bg-gray-700/10 border-gray-300/10
+    }
+
+    .matrix .menuContainer {
+      @apply border-2 bg-black border-[#00FF41] rounded-none backdrop-blur-0
+    }
+
+    .menuContainer > div {
+      @apply divide-x-0 divide-y
+    }
+
+    .matrix .menuContainer > div {
+      @apply divide-x-0 divide-y-2
+    }
+
+    .menuItem {
+      @apply px-5 py-4 border-gray-900/10 flex justify-between items-center
+    }
+
+    .menuItem.active {
+      @apply bg-gray-300/10
+    }
+
+    .dark .menuItem {
+      @apply border-gray-300/10
+    }
+
+    .dark .menuItem.active {
+      @apply bg-gray-500/30
+    }
+    
+    .matrix .menuItem {
+      @apply border-[#00FF41] text-[#00FF41]
+    }
+
+    .matrix .menuItem.active {
+      @apply bg-[#00FF41] text-black
+    }
+
+    /* Topbar */
+
+    .updates {
+      @apply border rounded-xl backdrop-blur border-gray-900/10 bg-gradient-to-tr from-gray-200/50 to-gray-300/50
+    }
+
+    .dark .updates {
+      @apply border-gray-300/10 from-gray-800/50 to-gray-900/50
+    }
+
+    .matrix .updates {
+      @apply border-2 border-[#00FF41] from-black to-black rounded-none
+    }
+
+    .matrix .updates li a {
+      @apply text-[#00FF41]
+    }
+
+    .matrix .updates h2 {
+      @apply border-b-2 border-[#00FF41]
+    }
+
+
+
+
+    /* Themes */
+
+    body {
+      @apply bg-gray-300 text-gray-900  bg-gradient-to-tr from-gray-200 to-gray-300 
+    }
+
+    .dark body {
+      @apply bg-gray-900 text-gray-300 from-gray-800 to-gray-900
+    }
+
+    .matrix body {
+      background: black ;
+    }
+
+    /* Theme Toggle */
+
+    .themeToggle a svg {
+      @apply w-6 h-6 text-gray-900;
+    }
+
+    .dark .themeToggle a svg {
+      @apply text-gray-200
+    }
+    
+    .matrix .themeToggle a svg {
+      @apply text-[#00FF41] hover:text-black
+    }
+
+    .matrix .themeToggle a.active svg {
+      @apply text-black hover:text-black
+    }
+
+    .Profile {
+      @apply w-28 h-28 mb-8 bg-gray-100 border-2 border-gray-100 rounded-full
+    }
+
+    .matrix .Profile {
+      @apply bg-[#00FF41] border-none border-[#00FF41] rounded-none
+    }
+
+    /* Divider */
+
+    .divider {
+      @apply h-[1px] w-full my-8 bg-gray-400/50 dark:bg-gray-700 border-0 rounded md:my-12
+    }
+
+    .dark .divider {
+      @apply bg-gray-700
+    }
+
+    .matrix .divider {
+      @apply h-[2px] rounded-none bg-[#00FF41]
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Typography */
+
     h1 {
       @apply font-sans text-4xl md:text-5xl font-normal text-gray-900 dark:text-gray-100;
+    }
+
+    .dark h1 {
+      @apply text-gray-100;
+    }
+
+    .matrix h1, .matrix h2, .matrix h3, .matrix h4, .matrix p, .matrix li {
+      @apply text-[#00FF41]
     }
 
     h2 {
@@ -23,35 +214,165 @@
       @apply text-base font-normal text-gray-600 dark:text-gray-100/60;
     }
 
+
+    /* Buttons */
+
     .btn {
       @apply px-5 py-1 rounded-full font-normal border cursor-pointer;
     }
 
+    .matrix .btn {
+      @apply rounded-none border-2;
+    }
+
     .btn-primary {
-      @apply text-gray-900 dark:text-gray-200 bg-gray-300/10 dark:bg-gray-800/10 border-gray-900/10 dark:border-gray-300/10;
+      @apply text-gray-900 bg-gray-300/10 border-gray-900/10;
+    }
+
+    .dark .btn-primary {
+      @apply text-gray-200 bg-gray-800/10 border-gray-300/10;
+    }
+
+    .matrix .btn-primary {
+      @apply text-[#00FF41] bg-black border-[#00FF41];
     }
 
     .btn-primary.active, .btn-primary:hover {
-      @apply text-gray-900 dark:text-gray-300 bg-gray-800/10 dark:bg-gray-100/10 border-gray-900/10 dark:border-gray-300/10;
+      @apply text-gray-900 bg-gray-800/10 border-gray-900/10;
+    }
+
+    .dark .btn-primary.active, .dark .btn-primary:hover {
+      @apply text-gray-300 bg-gray-100/10 border-gray-300/10;
+    }
+
+    .matrix .btn-primary.active, .matrix .btn-primary:hover {
+      @apply text-black bg-[#00FF41] border-[#00FF41] !important;
     }
 
     .icon-btn {
-      @apply h-10 w-10 p-2 rounded-full bg-gray-900 hover:bg-gray-800 dark:bg-gray-700/50 dark:hover:bg-gray-700 cursor-pointer;
+      @apply h-10 w-10 p-2 rounded-full bg-gray-900 hover:bg-gray-800 cursor-pointer;
+    }
+
+    .dark .icon-btn {
+      @apply bg-gray-700/50 hover:bg-gray-700;
+    }
+
+    .matrix .icon-btn {
+      @apply bg-[#00FF41] text-black;
     }
 
     .icontext-btn {
-      @apply w-9 h-9 md:w-auto md:h-auto text-sm flex gap-2 justify-center items-center md:px-5 md:py-[6px] rounded-full font-normal border cursor-pointer text-gray-900 dark:text-gray-200 bg-gray-300/10 dark:bg-gray-800/10 border-gray-900/10 dark:border-gray-300/10
+      @apply w-9 h-9 md:w-auto md:h-auto text-sm flex gap-2 justify-center items-center md:px-5 md:py-[6px] rounded-full font-normal border cursor-pointer text-gray-900 bg-gray-300/10 border-gray-900/10 hover:text-gray-900 hover:bg-gray-800/10 hover:border-gray-900/10
     }
 
-    .icontext-btn:hover {
-      @apply text-gray-900 dark:text-gray-300 bg-gray-800/10 dark:bg-gray-100/10 border-gray-900/10 dark:border-gray-300/10;
+    .dark .icontext-btn {
+      @apply text-gray-200 bg-gray-800/10 border-gray-300/10 hover:text-gray-300 hover:bg-gray-100/10 hover:border-gray-300/10
+    }
+
+    .matrix .icontext-btn {
+      @apply border-2 rounded-none text-[#00FF41] bg-black border-[#00ff41] hover:text-black hover:bg-[#00FF41] hover:border-[#00FF41]
     }
 
     .skill {
-      @apply bg-gray-300/30 dark:bg-gray-800 text-gray-900 dark:text-gray-300 p-4 rounded-lg flex justify-between items-center gap-4 border border-gray-900/10 dark:border-gray-300/10;
+      @apply bg-gray-300/30 text-gray-900 p-4 rounded-lg flex justify-between items-center gap-4 border border-gray-900/10;
     }
 
-    .skill img {
+    .dark .skill {
+      @apply bg-gray-800 text-gray-300 border-gray-300/10;
+    }
+
+    .matrix .skill {
+      @apply bg-black text-[#00FF41] border-[#00FF41] rounded-none border-2;
+    }
+
+    .skill svg {
       @apply h-8
+    }
+
+    .skill svg path, .credits svg path, .technology-icon svg path {
+      fill: revert-layer;
+    }
+
+    .matrix .skill svg path, .matrix .credits svg path, .matrix .technology-icon svg path {
+      @apply fill-current
+    }
+
+    .technology-icon svg {
+      @apply text-[#00FF41]
+    }
+
+
+    /* Experience */
+
+    .experience-item {
+      @apply flex justify-between items-end p-5 border rounded-xl bg-gray-300/30 border-gray-900/10
+    }
+
+    .dark .experience-item {
+      @apply bg-gray-800/50 border-gray-300/10
+    }
+
+    .matrix .experience-item {
+      @apply bg-black border-[#00FF41] rounded-none border-2
+    }
+
+    .exp-year {
+      @apply text-sm px-5 py-1 rounded-full border text-gray-900 bg-gray-300/30 border-gray-900/10
+    }
+    
+    .dark .exp-year {
+      @apply text-gray-200 bg-gray-800 border-gray-300/10;
+    }
+  
+    .matrix .exp-year {
+      @apply bg-black border-[#00FF41] border-2 rounded-none
+    }
+
+    .WorkCard {
+      @apply border rounded-xl overflow-hidden bg-gray-300/30 border-gray-900/10
+    }
+
+    .dark .WorkCard {
+      @apply bg-gray-800/50 border-gray-300/10
+    }
+
+    .matrix .WorkCard {
+      @apply border-2 rounded-none bg-black border-[#00FF41]
+    }
+
+    .WorkDetails {
+      @apply border-t bg-gray-300/30 dark:bg-gray-800 border-gray-900/10 dark:border-gray-300/10
+    }
+
+    .dark .WorkDetails {
+      @apply bg-gray-800 border-gray-300/10
+    }
+
+    .matrix .WorkDetails {
+      @apply border-t-2 bg-black border-[#00FF41]
+    }
+   
+    .blog-item {
+      @apply border rounded-xl overflow-clip border-gray-900/10 border-gray-300/10;
+    }
+    
+    .dark .blog-item {
+      @apply border-gray-300/10;
+    }
+
+    .matrix .blog-item {
+      @apply rounded-none border-2 border-[#00FF41];
+    }
+
+    .blog-details {
+      @apply border-t bg-gray-300/30 border-gray-900/10 py-2 px-5 rounded-b-xl
+    }
+
+    .dark .blog-details {
+      @apply bg-gray-800 border-gray-300/10
+    }
+
+    .matrix .blog-details {
+      @apply bg-black text-[#00FF41] border-[#00FF41] rounded-none border-t-2
     }
   }

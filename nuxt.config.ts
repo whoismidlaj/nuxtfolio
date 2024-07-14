@@ -21,7 +21,8 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap' }, 
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'},
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' },
+        { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css' },
 
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
     },
@@ -33,7 +34,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/color-mode', "nuxt-svgo"],
   colorMode: {
     classSuffix: '',
     preference: 'dark',
