@@ -151,6 +151,10 @@
       @apply text-[#00FF41] hover:text-black
     }
 
+    .matrix .themeToggle a:hover svg {
+      @apply text-black
+    }
+
     .matrix .themeToggle a.active svg {
       @apply text-black hover:text-black
     }

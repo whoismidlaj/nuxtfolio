@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      wpApiBaseUrl: process.env.WP_API_BASE_URL || 'https://default-url.com/wp-json/wp/v2/'
+      wpApiBaseUrl: process.env.WP_API_BASE_URL,
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_KEY,
     }
   },
   ssr: false,
@@ -10,13 +12,13 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      script: [
-        {
-          src: 'https://cloud.umami.is/script.js',
-          defer: true,
-          'data-website-id': 'e2759eea-c1c1-417c-a99e-7deaf62f4b4c'
-        }
-      ],
+      // script: [
+      //   {
+      //     src: 'https://cloud.umami.is/script.js',
+      //     defer: true,
+      //     'data-website-id': 'e2759eea-c1c1-417c-a99e-7deaf62f4b4c'
+      //   }
+      // ],
       link: [
         { rel: 'stylesheet', href: 'https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap' }, 
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com' },
