@@ -24,7 +24,7 @@ async function addComment() {
     if (error) {
       console.error('Error adding comment:', error)
     } else {
-      getComments()  // Refresh comments after successful insert
+      getComments()
       name.value = ''
       comment.value = ''
     }
