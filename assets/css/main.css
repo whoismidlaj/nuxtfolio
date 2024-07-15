@@ -39,7 +39,7 @@
     }
 
     .matrix .Navigation {
-      @apply border-2 border-t-[#00FF41] from-black to-black;
+      @apply border-2 border-t-[#00FF41] from-black to-black backdrop-blur-none;
     }
 
     .menuMobile svg {
@@ -199,7 +199,7 @@
     }
 
     .matrix h1, .matrix h2, .matrix h3, .matrix h4, .matrix p, .matrix li {
-      @apply text-[#00FF41]
+      @apply font-mono text-[#00FF41]
     }
 
     h2 {

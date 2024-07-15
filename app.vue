@@ -1,6 +1,9 @@
 <template>
   <Preloader v-if="isLoading" />
   <div v-else class="min-h-screen">
+    <div v-show="colorMode.preference === 'matrix'" class="fixed top-0 left-0 -z-10 w-full h-full opacity-30">
+      <iframe class="w-full h-full" src="https://rezmason.github.io/matrix/?width=170&fallSpeed=0.1&effect=plain" frameborder="0"></iframe>
+    </div>
     <TopBar/>
     <NuxtPage />
     <Navigation />
@@ -20,6 +23,8 @@
 </style>
 
 <script setup lang="ts">
+const colorMode = useColorMode();
+
 const isLoading = ref(true);
 const useLoading = async () => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
