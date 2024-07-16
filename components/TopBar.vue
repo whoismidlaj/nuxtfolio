@@ -10,7 +10,7 @@
         <div v-show="showPop" class="fixed top-20 md:top-8 left-1/2 -translate-x-1/2 p-5 w-[calc(100%-2.5rem)] h-fit max-w-[400px] updates">
             <h2 class="text-md mb-4">Updates</h2>
             <ul class="list-decimal list-outside ps-5 flex flex-col gap-2">
-                <li class="text-s"><NuxtLink to="/guestbook">Guestbook</NuxtLink> is here. lol, some bug is there. working on it</li>
+                <li class="text-s"><NuxtLink to="/guestbook">Guestbook</NuxtLink> is here</li>
                 <li class="text-sm">Added <a @click="setTheme('matrix')" class="underline underline-offset-2 text-gray-800 dark:text-gray-100 font-normal" >matrix</a> theme</li>
                 <li class="text-sm">Projects page is live, checkout my recent <NuxtLink class="underline underline-offset-2 text-gray-800 dark:text-gray-100 font-normal" @click="handleClick" to="/projects">projects</NuxtLink></li>
                 <li class="text-sm"><NuxtLink class="underline underline-offset-2 text-gray-800 dark:text-gray-100 font-normal" @click="handleClick" to="/blog">Blog</NuxtLink> is under construction</li>
