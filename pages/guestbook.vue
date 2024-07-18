@@ -46,7 +46,7 @@ onMounted(() => {
 
     <div class="w-full space-y-12">
 
-      <div class="w-1/2">
+      <div class="md:w-1/2">
         <form class="space-y-4" @submit.prevent="addComment">
           <div>
             <input type="text" placeholder="Name" v-model="name" id="name" required />
@@ -75,7 +75,7 @@ onMounted(() => {
 <style>
 
 input, textarea {
-  @apply p-3 rounded-xl w-full font-normal text-base border cursor-pointer text-gray-900 bg-gray-300/10 border-gray-900/10 outline-none
+  @apply p-3 rounded-xl w-full font-normal text-base border cursor-pointer text-gray-900 bg-gray-300/10 border-gray-900/10 outline-none focus-visible:outline-none;
 }
 
 .dark input, .dark textarea {
@@ -83,7 +83,7 @@ input, textarea {
 }
 
 .matrix input, .matrix textarea {
-  @apply border-2 rounded-none text-[#00FF41] bg-black border-[#00FF41]
+  @apply border-2 rounded-none text-[#00FF41] bg-black border-[#00FF41] placeholder:text-[#00FF41]
 }
 
 .matrix span {
