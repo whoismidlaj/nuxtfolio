@@ -21,9 +21,6 @@
         <a href="https://t.me/whatismidlaj" target="_blank" class="icon-btn">
             <IconTele :fontControlled="false" />
         </a>
-        <a href="https://twitter.com/whoismidlaj" target="_blank" class="icon-btn">
-            <IconTwit :fontControlled="false" />
-        </a>
         </div>
         <div class="flex gap-4">
             <a href="mailto:midlaj@tuta.io" target="_blank" class="btn btn-primary mt-8">Email Me</a>
@@ -37,7 +34,6 @@ import IconGit from '~/assets/img/socials/github.svg'
 import IconInsta from '~/assets/img/socials/instagram.svg'
 import IconMast from '~/assets/img/socials/mastodon.svg'
 import IconTele from '~/assets/img/socials/telegram.svg'
-import IconTwit from '~/assets/img/socials/twitter.svg'
 
 const colorMode = useColorMode();
 </script>

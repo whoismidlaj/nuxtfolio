@@ -5,6 +5,7 @@ import { supabase } from '../utils/supabase'
 const comments = ref([])
 const name = ref('')
 const comment = ref('')
+const website = ref('')
 
 async function getComments() {
   const { data, error } = await supabase.from('comments').select()
@@ -19,7 +20,7 @@ async function addComment() {
   if (name.value && comment.value) {
     const { error } = await supabase
       .from('comments')
-      .insert({ name: name.value, comment: comment.value })
+      .insert({ name: name.value, comment: comment.value, website: website.value })
     
     if (error) {
       console.error('Error adding comment:', error)
@@ -27,6 +28,7 @@ async function addComment() {
       getComments()
       name.value = ''
       comment.value = ''
+      website.value = ''
     }
   } else {
     alert('Please fill in both name and comment')
@@ -48,12 +50,9 @@ onMounted(() => {
 
       <div class="md:w-1/2">
         <form class="space-y-4" @submit.prevent="addComment">
-          <div>
             <input type="text" placeholder="Name" v-model="name" id="name" required />
-          </div>
-          <div>
+            <input type="text" placeholder="Website" v-model="website" id="website" />
             <textarea v-model="comment" placeholder="Comment" id="comment" required></textarea>
-          </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
@@ -61,7 +60,7 @@ onMounted(() => {
       <div class="w-full flex flex-col-reverse gap-4">
         <div v-for="comment in comments" :key="comment.id" class="comment">
           <div class="flex justify-between">
-            <h3 class="font-base">{{ comment.name }}</h3>
+            <h3 class="font-base"><a :href="comment.website">{{ comment.name }}</a></h3>
             <span class="text-sm">{{ formatDate(comment.created_at) }}</span>
           </div>
           <p>{{ comment.comment }}</p>

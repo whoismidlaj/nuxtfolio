@@ -7,7 +7,6 @@
     <TopBar/>
     <NuxtPage />
     <Navigation />
-    <Neko />
   </div>
 </template>
 
