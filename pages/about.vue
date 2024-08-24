@@ -72,7 +72,7 @@
         <hr class="divider">
         <h2 class="mt-4 mb-4">About this site</h2>
         <ul class="credits list-none flex flex-col gap-2">
-            <li class="flex items-center flex-wrap">Hosted on <a href="https://onlyfrens.in">OnlyFrens</a></li>
+            <li class="">Hosted on <a href="https://onlyfrens.in">onlyfrens</a></li>
             <li class="flex items-center flex-wrap">Powered by <IconNuxt class="w-5 mx-2" /> Nuxt.js and <IconTailwind class="w-5 mx-2" /> TailwindCSS</li>
         </ul>
     </div>
