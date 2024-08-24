@@ -26,6 +26,7 @@
             <a href="mailto:midlaj@tuta.io" target="_blank" class="btn btn-primary mt-8">Email Me</a>
             <a href="../midlaj-resume.pdf" target="_blank" class="btn btn-primary mt-8">Resume</a>
         </div>
+    <!-- <VisitorsCounter /> -->
     </div>
 </template>
 
