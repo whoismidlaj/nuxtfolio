@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/color-mode', "nuxt-svgo"],
   colorMode: {
     classSuffix: '',
-    preference: 'dark',
+    preference: 'matrix',
     fallback: 'dark'
 },
 plugins: [
