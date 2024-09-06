@@ -277,6 +277,10 @@
       @apply border-2 rounded-none text-[#00FF41] bg-black border-[#00ff41] hover:text-black hover:bg-[#00FF41] hover:border-[#00FF41]
     }
 
+    .matrix .icontext-btn:hover span {
+      @apply text-black;
+    }
+
     .skill {
       @apply bg-gray-300/30 text-gray-900 p-4 rounded-lg flex justify-between items-center gap-4 border border-gray-900/10;
     }
